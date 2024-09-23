@@ -1,12 +1,18 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+module.exports = {
+  content: ["./**/*.{html,js}"],
   theme: {
     extend: {
-      fontFamily: {
-        roboto: ["roboto", "sans-serif"],
+      backgroundImage: {
+        "custom-gradient":
+          "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%)",
+        "custom-gradient-2":
+          "linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.70) 87.54%)",
       },
-
+      fontFamily: {
+        nunito: ["nunito", "sans-serif"],
+        roboto: ["Roboto Condensed", "sans-serif"],
+      },
       fontSize: {
         14: "0.875rem",
         15: "0.9375rem",
@@ -19,7 +25,6 @@ export default {
         80: "5rem",
         88: "5.5rem",
       },
-
       lineHeight: {
         15: "0.9375rem",
         32: "2rem",
@@ -28,7 +33,6 @@ export default {
         64: "4rem",
         80: "5rem",
       },
-
       colors: {
         GrayOne: "#F8F8F8;",
         Graytwo: "#F4F4F4",
@@ -39,11 +43,9 @@ export default {
         Darkgray: "#2A2D32",
         Semidark: "#434850",
       },
-
       maxWidth: {
         siteWidth: "1512px",
       },
-
       spacing: {
         22: "1.375rem",
         30: "1.875rem",

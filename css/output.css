@@ -704,10 +704,6 @@ p,
   inset: -0.25rem;
 }
 
-.bottom-0{
-  bottom: 0px;
-}
-
 .bottom-10{
   bottom: 2.5rem;
 }
@@ -742,10 +738,6 @@ p,
 
 .top-1\/2{
   top: 50%;
-}
-
-.top-24{
-  top: 6rem;
 }
 
 .top-full{
@@ -855,6 +847,10 @@ p,
 
 .ml-auto{
   margin-left: auto;
+}
+
+.mt-10{
+  margin-top: 2.5rem;
 }
 
 .mt-12{
@@ -1084,6 +1080,10 @@ p,
   max-width: 995px;
 }
 
+.max-w-full{
+  max-width: 100%;
+}
+
 .flex-1{
   flex: 1 1 0%;
 }
@@ -1176,6 +1176,10 @@ p,
 
 .animate-bounce{
   animation: bounce 1s infinite;
+}
+
+.cursor-pointer{
+  cursor: pointer;
 }
 
 .touch-auto{
@@ -2117,6 +2121,10 @@ p,
   border-width: 2px;
 }
 
+.border-\[0\.5px\]{
+  border-width: 0.5px;
+}
+
 .border-x{
   border-left-width: 1px;
   border-right-width: 1px;
@@ -2133,6 +2141,10 @@ p,
 
 .border-b-0{
   border-bottom-width: 0px;
+}
+
+.border-b-\[0\.5px\]{
+  border-bottom-width: 0.5px;
 }
 
 .border-e{
@@ -2366,6 +2378,11 @@ p,
   padding-bottom: 0.5rem;
 }
 
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -2474,7 +2491,7 @@ p,
   font-family: nunito, sans-serif;
 }
 
-.font-obviously{
+.font-roboto{
   font-family: Roboto Condensed, sans-serif;
 }
 
@@ -2520,9 +2537,9 @@ p,
   line-height: 1.5rem;
 }
 
-.text-xs{
-  font-size: 0.75rem;
-  line-height: 1rem;
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold{
@@ -2625,12 +2642,20 @@ p,
   line-height: 1.5rem;
 }
 
+.leading-\[0\.9375rem\]{
+  line-height: 0.9375rem;
+}
+
 .leading-\[100\%\]{
   line-height: 100%;
 }
 
 .leading-\[110\%\]{
   line-height: 110%;
+}
+
+.leading-\[116\%\]{
+  line-height: 116%;
 }
 
 .leading-\[120\%\]{
@@ -2641,12 +2666,12 @@ p,
   line-height: 123%;
 }
 
-.tracking-\[0\.045rem\]{
-  letter-spacing: 0.045rem;
-}
-
 .tracking-\[0\.05625rem\]{
   letter-spacing: 0.05625rem;
+}
+
+.tracking-\[0\.105rem\]{
+  letter-spacing: 0.105rem;
 }
 
 .tracking-\[0\.9px\]{
@@ -2656,6 +2681,11 @@ p,
 .text-Darkgray{
   --tw-text-opacity: 1;
   color: rgb(42 45 50 / var(--tw-text-opacity));
+}
+
+.text-Deepgray{
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
 }
 
 .text-Semidark{
@@ -3149,7 +3179,7 @@ section + .fullVideoBlock {
   text-transform: uppercase;
   scrollbar-width: none;
   white-space: nowrap;
-  font-family: obviously-narrow, sans-serif;
+  font-family: robofont-roboto-narrow, sans-serif;
   font-size: 14.6vw;
   font-weight: 900;
   line-height: 105%;
@@ -3466,6 +3496,24 @@ body.nav-expanded .main--menu > li > a::after{
   text-transform: capitalize;
 }
 
+.placeholder\:uppercase::-moz-placeholder{
+  text-transform: uppercase;
+}
+
+.placeholder\:uppercase::placeholder{
+  text-transform: uppercase;
+}
+
+.placeholder\:text-Deepgray::-moz-placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-Deepgray::placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
+}
+
 .before\:absolute::before{
   content: var(--tw-content);
   position: absolute;
@@ -3551,6 +3599,11 @@ body.nav-expanded .main--menu > li > a::after{
 .before\:bg-custom-gradient::before{
   content: var(--tw-content);
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.before\:bg-custom-gradient-2::before{
+  content: var(--tw-content);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.70) 87.54%);
 }
 
 .before\:transition-all::before{
@@ -3703,6 +3756,14 @@ body.nav-expanded .main--menu > li > a::after{
     margin-bottom: 1.75rem;
   }
 
+  .md\:mt-12{
+    margin-top: 3rem;
+  }
+
+  .md\:mt-\[1\.375rem\]{
+    margin-top: 1.375rem;
+  }
+
   .md\:flex{
     display: flex;
   }
@@ -3715,8 +3776,16 @@ body.nav-expanded .main--menu > li > a::after{
     max-width: 158px;
   }
 
+  .md\:max-w-\[200px\]{
+    max-width: 200px;
+  }
+
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:gap-\[22px\]{
+    gap: 22px;
   }
 
   .md\:space-y-4 > :not([hidden]) ~ :not([hidden]){
@@ -3758,10 +3827,6 @@ body.nav-expanded .main--menu > li > a::after{
 }
 
 @media (min-width: 1024px){
-  .lg\:top-36{
-    top: 9rem;
-  }
-
   .lg\:order-1{
     order: 1;
   }
@@ -3776,6 +3841,10 @@ body.nav-expanded .main--menu > li > a::after{
 
   .lg\:col-span-3{
     grid-column: span 3 / span 3;
+  }
+
+  .lg\:col-span-5{
+    grid-column: span 5 / span 5;
   }
 
   .lg\:mx-0{
@@ -3835,8 +3904,16 @@ body.nav-expanded .main--menu > li > a::after{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .lg\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .lg\:grid-cols-5{
     grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-8{
+    grid-template-columns: repeat(8, minmax(0, 1fr));
   }
 
   .lg\:flex-row{
@@ -3951,10 +4028,6 @@ body.nav-expanded .main--menu > li > a::after{
     padding-bottom: 0.625rem;
   }
 
-  .lg\:pb-6{
-    padding-bottom: 1.5rem;
-  }
-
   .lg\:pb-\[75px\]{
     padding-bottom: 75px;
   }
@@ -4014,12 +4087,6 @@ body.nav-expanded .main--menu > li > a::after{
   }
 }
 
-@media (min-width: 1536px){
-  .\32xl\:pb-9{
-    padding-bottom: 2.25rem;
-  }
-}
-
 @media (prefers-color-scheme: dark){
   @media (min-width: 1024px){
     .dark\:lg\:hover\:\[paint-order\:markers\]:hover{
@@ -4048,7 +4115,7 @@ body.nav-expanded .main--menu > li > a::after{
   }
 }
 
-.\[\&\>\*\]\:font-obviously>*{
+.\[\&\>\*\]\:font-roboto>*{
   font-family: Roboto Condensed, sans-serif;
 }
 
@@ -4085,10 +4152,6 @@ body.nav-expanded .main--menu > li > a::after{
   opacity: 0.8;
 }
 
-.\[\&\>h3\]\:font-obviously>h3{
-  font-family: Roboto Condensed, sans-serif;
-}
-
 .\[\&\>h3\]\:text-2xl>h3{
   font-size: 1.5rem;
   line-height: 2rem;
@@ -4096,10 +4159,6 @@ body.nav-expanded .main--menu > li > a::after{
 
 .\[\&\>h3\]\:font-normal>h3{
   font-weight: 400;
-}
-
-.\[\&\>h4\]\:font-obviously>h4{
-  font-family: Roboto Condensed, sans-serif;
 }
 
 .\[\&\>h4\]\:text-\[0\.9375rem\]>h4{
@@ -4118,7 +4177,7 @@ body.nav-expanded .main--menu > li > a::after{
   position: relative;
 }
 
-.\[\&\>li\>a\]\:font-obviously>li>a{
+.\[\&\>li\>a\]\:font-roboto>li>a{
   font-family: Roboto Condensed, sans-serif;
 }
 
