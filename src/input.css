@@ -16,7 +16,7 @@
   }
 
   h2 {
-    @apply font-obviously font-normal leading-[100%];
+    @apply font-roboto font-normal leading-[100%];
     font-size: 2rem;
     line-height: 2.46rem;
   }
@@ -141,7 +141,7 @@ body.nav-expanded .main--menu > li > a::after {
 }
 
 .button {
-  @apply text-black text-sm uppercase font-obviously font-normal leading-[120%] tracking-[0.84px] inline-flex gap-3 items-center justify-between border border-solid border-black py-3 px-5 hover:bg-black hover:text-white hover:border hover:border-solid duration-500 min-w-[156px];
+  @apply text-black text-sm uppercase font-roboto font-normal leading-[120%] tracking-[0.84px] inline-flex gap-3 items-center justify-between border border-solid border-black py-3 px-5 hover:bg-black hover:text-white hover:border hover:border-solid duration-500 min-w-[156px];
 }
 
 .button svg * {
@@ -234,7 +234,7 @@ body.nav-expanded .main--menu > li > a::after {
 
   .stroke-text {
     white-space: nowrap;
-    font-family: obviously-narrow, sans-serif;
+    font-family: robofont-roboto-narrow, sans-serif;
     font-size: 14.6vw;
     font-weight: 900;
     line-height: 105%;
@@ -242,7 +242,7 @@ body.nav-expanded .main--menu > li > a::after {
   }
 
   @media only screen and (min-width: 768px) {
-     .stroke-text {
+    .stroke-text {
       -webkit-text-stroke-width: 2px;
       font-weight: 800;
     }
@@ -253,7 +253,7 @@ body.nav-expanded .main--menu > li > a::after {
     line-height: 78%;
   }
   @media only screen and (min-width: 1280px) {
-     .stroke-text {
+    .stroke-text {
       -webkit-text-stroke-width: 2px;
       font-weight: 600;
       line-height: 78%;
