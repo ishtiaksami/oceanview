@@ -869,6 +869,10 @@ p,
   margin-top: 1.25rem;
 }
 
+.mb-8{
+  margin-bottom: 2rem;
+}
+
 .box-border{
   box-sizing: border-box;
 }
@@ -1106,6 +1110,10 @@ p,
 
 .max-w-full{
   max-width: 100%;
+}
+
+.max-w-\[64\.625rem\]{
+  max-width: 64.625rem;
 }
 
 .flex-1{
@@ -2504,6 +2512,14 @@ p,
   padding-top: 2rem;
 }
 
+.pb-3{
+  padding-bottom: 0.75rem;
+}
+
+.pt-5{
+  padding-top: 1.25rem;
+}
+
 .text-left{
   text-align: left;
 }
@@ -2622,6 +2638,10 @@ p,
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[1\.75rem\]{
+  font-size: 1.75rem;
 }
 
 .font-bold{
@@ -2754,6 +2774,14 @@ p,
 
 .leading-\[15px\]{
   line-height: 15px;
+}
+
+.leading-4{
+  line-height: 1rem;
+}
+
+.leading-7{
+  line-height: 1.75rem;
 }
 
 .tracking-\[0\.045rem\]{
